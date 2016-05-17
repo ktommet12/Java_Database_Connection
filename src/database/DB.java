@@ -31,9 +31,9 @@ public class DB {
 		try{
 			Connection conn = getConnection();
 			statement = conn.createStatement();
-			result = statement.executeQuery("select * from products");
+			result = statement.executeQuery("select * from hello_world");
 			while(result.next()){
-				String productName = result.getString("product_name");
+				String productName = result.getString("name");
 				System.out.println(productName);
 			}
 		}
