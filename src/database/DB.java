@@ -13,9 +13,9 @@ public class DB {
 	private static Connection getConnection() throws Exception{
 		try{
 			String driver = "com.mysql.jdbc.Driver";
-			String url = "jdbc:mysql://us-cdbr-azure-southcentral-e.cloudapp.net/acsm_981cd5394557e4a";
-			String username = "b35cc3355c34a7";
-			String password = "e7a14644d96a13a";//password will not work
+			String url = "jdbc:mysql://us-cdbr-azure-southcentral-e.cloudapp.net/JavaIM";
+			String username = "b5f5472103c700";
+			String password = "bcefb3c7";
 			Class.forName(driver);
 			
 			Connection conn = DriverManager.getConnection(url, username, password);
